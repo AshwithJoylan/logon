@@ -1,0 +1,10 @@
+*.md
+**/*{.,-}min.js
+node_modules/
+/lib/
+/example/lib/
+/native-example/lib/
+/native-package/lib/
+/flow-typed/
+/docs/
+/.git/
