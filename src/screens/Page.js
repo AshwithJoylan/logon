@@ -42,7 +42,6 @@ const Page = (props) => {
   renderItem = ({item}) => (
     <TouchableOpacity
     onPress={() => {
-      // props.navigation.setParams({ data: { name: item.name, email: item.email, number: item.number } });
       props.navigation.navigate('Update', { name: item.name, email: item.email, number: item.number, id: item._id });
     }}
     activeOpacity={0.5}
@@ -52,7 +51,6 @@ const Page = (props) => {
       <Text>{item.number}</Text>
     </TouchableOpacity>
   )
-  console.log(data);
   return (
     
     <View style={styles.container}>

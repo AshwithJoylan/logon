@@ -12,7 +12,7 @@ const AddProfile = (props) => {
 
     onPress = () => {
         if (!email && !number) {
-            return console.log('Error');
+            return Toast.show({ text: 'Enter proper credentials', buttonText: 'Okay', position: 'bottom', type: 'danger' });
         }
         
         api.post('profile/add', {
